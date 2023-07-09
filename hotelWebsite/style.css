@@ -30,7 +30,7 @@ body{
     width: 100%;
     height: 100%;
     /* insert background image */
-    background-image:url(images/background_image.avif);
+    background-image:url(images/background_image_doodle.avif);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
