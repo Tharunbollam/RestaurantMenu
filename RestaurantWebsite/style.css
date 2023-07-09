@@ -12,7 +12,7 @@ body{
 }
 
 /* hero section */
-#hero{
+#main{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -22,7 +22,7 @@ body{
     text-align: center;
 }
 /* pseudo column */
-#hero::before{
+#main::before{
     content: "";
     position: absolute;
     top: 0;
@@ -37,16 +37,16 @@ body{
     background-attachment: fixed;
     filter: brightness(70%);
 }
-#hero_content{
+#main_content{
     position: absolute;
 
 }
-#hero_content h1{
+#main_content h1{
     color:white;
     font-size: 4.8rem;
     text-shadow: 2px 2px 2px #000;
 }
-#hero_content h2{
+#main_content h2{
     font-size: 1.5rem;
     color:white;
     font-family: cursive;
@@ -54,7 +54,7 @@ body{
     margin-bottom: 4rem;
     text-shadow: 2px 2px 2px #000;
 }
-#hero_content a{
+#main_content a{
     color:white;
     text-decoration: none;
     padding: 3px 20px 3px 20px;
@@ -67,7 +67,7 @@ body{
 /* header section */
 
 #header{
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     height: 70px;
@@ -76,6 +76,7 @@ body{
 #navbar{
     display: flex;
     justify-content: space-around;
+    /* background: rgb(0,0,0,0.5); */
     background-color: yellowgreen ;
 }
 #navbar h1{
@@ -144,26 +145,7 @@ body{
     text-decoration: none;
     color:white;
 }
-@media screen and(max-width : 710px) {
-    #mobile_menu {
-        display: block;
-    }
-    #navbar ul{
-        display: none;
-    }
-    html{
-        font-size: 95%;
-    }
-    #menu_row{
-        flex-wrap: wrap;
-        padding: 1 10px 0 10px;
-    }
-}
-@media  screen and (max-width:400px){
-    html{
-        font-size: 70%;
-    }
-}
+
 
 /* menu section */
 #menu{
@@ -214,4 +196,165 @@ body{
     align-items: center;
     text-align: center;
     margin: 5px;
+}
+
+#about{
+    padding: 25px 0 25px 0;
+}
+#about_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 100px 0 100px;
+}
+.about_col{
+    flex: 1;
+}
+#about_img{
+    width: 300px;
+    height: 300px;
+    border-radius:50%;
+    margin: auto;
+}
+#about_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+   object-fit: fill;
+}
+.about_col h1{
+    text-align: center;
+}
+.about_col p{
+    text-align: justify;
+    font-weight: bold;
+}
+
+/* footer section */
+#footer{
+    background-color: #292929;
+    padding: 20px;
+    position: relative;
+}
+#footer h5{
+    text-align: center;
+    color: orange;
+}
+#footer h5 a{
+    color: white;
+    text-decoration: none;
+}
+
+#top{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+#top a{
+    color: white;
+    font-size: 1.3rem;
+}
+/* contact section */
+#contact{
+    padding: 25px 0 25px 0;
+}
+#contact_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px 0 100px;
+    flex-wrap: wrap;
+}
+.contact_col{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+
+
+}
+.contact_col p,h3{
+    font-weight: bold;
+    color:#292929
+}
+.contact_col p a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#292929
+    
+}
+
+#social a{
+    color: magenta;
+    margin: 3px;
+}
+.contact_col form{
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    width: 70%;
+    padding: 20px 40px 20px 20px;
+}
+.contact_col form h2{
+    text-align: center;
+    font-family: cursive;
+}
+.contact_col form input{
+    width: 100%;
+    height: 17pt;
+    padding: 5px;
+}
+.contact_col form textarea{
+    width:100% ;
+    padding: 5px;
+    margin: 5px;
+}
+.contact_col form button{
+    margin: auto;
+    padding: 10px;
+    color: orange;
+    font: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and(max-width : 710px) {
+    #mobile_menu {
+        display: block;
+    }
+    #navbar ul{
+        display: none;
+    }
+    html{
+        font-size: 95%;
+    }
+    #menu_row,#about_row,#contact_row{
+        flex-wrap: wrap;
+        padding: 1 10px 0 10px;
+    }
+}
+@media  screen and (max-width:400px){
+    html{
+        font-size: 70%;
+    }
+}
+@media screen and(max-width:360px){
+    html{
+        font-size: 70%;
+    }
+    #about_img{
+        width: 220px;
+        height: 220px;
+    }
 }
