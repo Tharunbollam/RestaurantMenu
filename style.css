@@ -39,7 +39,8 @@ body{
     position: absolute;
 }
 #main_content h1{
-    color: orange;
+    background-color: aliceblue;
+    color: orangered;
     font-size: 2.8rem;
     font-family: ;
     text-shadow: 2px 2px 2px #000;
@@ -135,8 +136,10 @@ body{
 
 /* menu section */
 #menu{
+    background-color: aqua;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
 }
 #section{
     padding: 25px 0 25px 0;
@@ -147,12 +150,11 @@ body{
 #menu_row{
     display: flex;
     justify-self: center;
-    
 }
 #menu_col{
     display: flex;
     flex-direction: column;
-    
+    align-content:space-evenly ;
     box-shadow: 2px 2px 2px #bbb;
     border: 1px solid #bbb;
     background-color: #fff;
