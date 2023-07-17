@@ -147,20 +147,18 @@ body{
     font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#menu_row{
-    display: flex;
-    justify-self: center;
-}
+
 #menu_col{
     display: flex;
     flex-direction: column;
+    flex: 1;
     align-content:space-evenly ;
     box-shadow: 2px 2px 2px #bbb;
     border: 1px solid #bbb;
     background-color: #fff;
     margin: 10px;
     pad: 10px;
-    flex: 1;
+    
 }
 #menu_col h2{
     background-color: red;
@@ -197,9 +195,10 @@ body{
 }
 #about_row{
     display: flex;
-    flex: 1;
+    flex-direction: column;
+    /* flex: 1;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center; */
     align-items: center;
     flex-wrap: wrap;
     padding: 0 100px 0 100px;
