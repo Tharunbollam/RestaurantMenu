@@ -1,2 +1,2 @@
 # RestaurantMenu
-Website that acts as a landing page and menu of a  Restaurant
+Website of a  Restaurant that acts as a menu for the restaurant
